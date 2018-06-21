@@ -1,0 +1,82 @@
+<!-- Menu Top -->
+<div class="topbar">
+	<div class="topbar-left">
+		<a href="home.html" class="logo"><span id="spanRazonSocialEmpresa">Sistema<span> Encuestas</span></span></a>
+	</div>
+	<div class="navbar navbar-default" role="navigation">
+		<div class="container">
+			<ul class="nav navbar-nav navbar-left">
+				<li>
+					<h4 class="logo">Sistema de Encuestas </h4>
+				</li>
+			</ul>
+
+		</div><!-- end container -->
+	</div><!-- end navbar -->
+</div>
+
+
+<!-- Menu Left -->
+<div class="left side-menu">
+	<div class="sidebar-inner slimscrollleft">
+		<!--- Sidemenu -->
+		<div id="sidebar-menu">
+			<div class="user-details">
+				<div class="overlay"></div>
+				<div class="text-center">
+					<img src="assets/images/users/avatar-1.jpg" alt="" class="thumb-md img-circle">
+				</div>
+				<div class="user-info">
+					<div>
+						<a href="#setting-dropdown" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							<div id="spanNombreUsuario"><script>$("#spanNombreUsuario").html(GetLocalStorage("usuario_nombre"));</script></div> <span class="mdi mdi-menu-down"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="dropdown" id="setting-dropdown">
+				<ul class="dropdown-menu">
+					<li><a href="javascript:void(0)"><i class="mdi mdi-face-profile m-r-5"></i> Perfil</a></li>
+					<li><a href="javascript:void(0)"><i class="mdi mdi-account-settings-variant m-r-5"></i> Configuraciones</a></li>
+					<li><a href="javascript:void(0)"><i class="mdi mdi-lock m-r-5"></i> Bloquear Pantalla</a></li>
+					<li><a href="javascript:void(0)"><i class="mdi mdi-logout m-r-5"></i> Cerrar Sesión</a></li>
+				</ul>
+			</div>
+			<ul>
+				<li class="menu-title">Menu</li>
+
+				<li>
+					<a href="home.html" class="waves-effect"><i class="mdi  mdi mdi-home"></i><span> Inicio </span> </a>
+				</li>
+				<li class="menu-title">Productos</li>
+				<li class="has_sub">
+					<a href="producto_ingresar.html" class="waves-effect">
+						<i class="mdi  mdi mdi-dropbox"></i>
+						<span> Ingresar Productos </span>
+						<!--<span class="menu-arrow"></span>-->
+					</a>
+					<!--
+					<ul class="list-unstyled">
+						<li><a href="producto_ingresar.html">Ingresar</a></li>
+						<li><a href="producto_listar.html">Listar</a></li>
+					</ul>
+					-->
+				</li>
+				<li>
+					<a href="producto_listar.html" class="waves-effect"><i class="mdi  mdi mdi-dropbox"></i><span> Listar Productos </span></a>
+				</li>
+				<li class="menu-title">Ventas</li>
+				<li>
+					<a href="venta_ingresar.html" class="waves-effect"><i class="mdi  mdi mdi-cash-usd"></i><span> Ingresar Ventas </span></a>
+				</li>
+				<li>
+					<a href="venta_listar.html" class="waves-effect"><i class="mdi  mdi mdi-cash-usd"></i><span> Listar Ventas </span></a>
+				</li>
+				<li class="menu-title">Caja</li>
+				<li>
+					<a href="caja_cerrar.html" class="waves-effect"><i class="mdi  mdi mdi-power"></i> <span>Cerrar Caja </span> </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

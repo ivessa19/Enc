@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <title>Encuesta</title>
+
+    <!-- vendor css -->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet" />
+    <link href="lib/highlightjs/github.css" rel="stylesheet" />
+    <link href="lib/select2/css/select2.min.css" rel="stylesheet" />
+
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+
+  <body onload="init();validacion();">
+    <div class="br-header">
+      <div class="br-header-left">
+        <div class="input-group hidden-xs-down wd-170 transition">
+          <div class="br-logo"><a href="#">EE<i>S</i></a></div>
+          <h5>Encuesta Evaluación Servicio</h5>
+        </div><!-- input-group -->
+      </div>
+    </div><!-- br-header -->
+    
+    <div class="br-mainpanel">
+      <div class="br-pageheader pd-y-15 pd-l-20">
+        <nav class="breadcrumb pd-0 mg-0 tx-12">
+          <h6>Evaluando a: <label id="pPsw"></label> <div class="respuesta"></div>
+        </nav>
+      </div><!-- br-pageheader -->
+    
+      <div class="br-pagebody">
+        <div class="br-section-wrapper">
+          <form id="demo-form" onsubmit="return ValidarIngresarProducto()"/>
+            <div id="divErrorIngresarProducto" class="form-group" style="display: none;">
+                <div id="divMensajeError" class="alert alert-danger" role="alert"></div>
+            </div>
+            <div class="d-md-flex">
+              <div id="slWrapper" class="parsley-select wd-250">
+                <label>Elige una empresa</label>
+                <select id="ddlEmpresa" name="
+                ddlEmpresa" class="form-control select2" data-placeholder="Elige una" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required="">
+                </select>
+                <div id="slErrorContainer"></div>
+              </div>
+              <div id="slWrapper" class="parsley-select wd-250">
+                <label>Elige un usuario</label>
+                <select id="ddlUsuario" name="ddlUsuario" class="form-control select2" data-placeholder="Elige una" data-parsley-class-handler="#slWrapper" data-parsley-errors-container="#slErrorContainer" required="">
+                </select>
+                <div id="slErrorContainer"></div>
+              </div>
+              <div class="mg-md-l-10 mg-t-10 mg-md-t-0">
+                <button type="submit" id="btnGuardarData" class="btn btn-info tx-11 pd-y-12 tx-uppercase tx-spacing-2" value="5">✔</button>
+                <button id="btnCerrarSesion" type="submit" class="btn btn-info tx-11 pd-y-12 tx-uppercase tx-spacing-2" value="5">Cerrar Sesión</button>
+              </div>
+            </div>
+          </form>
+        </div><!-- br-section-wrapper -->
+      </div><!-- br-pagebody -->
+      <footer class="br-footer">
+        <div class="footer-left">
+          <div class="mg-b-2">Copyright &copy; 2017. Bracket Plus. All Rights Reserved.</div>
+        </div>
+        
+      </footer>
+    </div><!-- br-mainpanel -->
+    <!-- ########## END: MAIN PANEL ########## -->
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/popper.js/popper.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="lib/moment/moment.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/jquery-switchbutton/jquery.switchButton.js"></script>
+    <script src="lib/peity/jquery.peity.js"></script>
+    <script src="lib/highlightjs/highlight.pack.js"></script>
+    <script src="lib/select2/js/select2.min.js"></script>
+    <script src="lib/parsleyjs/parsley.js"></script>
+    
+    <script type="text/javascript" src=js/appController.js></script>
+
+    <script src="js/bracket.js"></script>
+    <script>
+      $(function(){
+        'use strict';
+
+        $('#selectForm').parsley();
+        $('#selectForm2').parsley();
+      });
+    </script>
+  </body>
+</html>

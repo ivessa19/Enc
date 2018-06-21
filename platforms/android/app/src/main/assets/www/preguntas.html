@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <title>Encuestas</title>
+
+    <!-- vendor css -->
+    <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet" />
+    <link href="lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
+    <link href="lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet" />
+    <link href="lib/highlightjs/github.css" rel="stylesheet" />
+    <link href="lib/jquery.steps/jquery.steps.css" rel="stylesheet" />
+
+    <!-- Bracket CSS -->
+    <link rel="stylesheet" href="css/bracket.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /></head>
+  <body onload="preguntas();preguntas2();preguntas3();preguntas4();preguntas5();validacion();">
+
+    <div class="br-header">
+      <div class="br-header-left">
+        <div class="input-group hidden-xs-down wd-170 transition">
+          <div class="br-logo"><a href="#">EE<i>S</i></a></div>
+          <h5>Encuesta Evaluación Servicio</h5>
+        </div><!-- input-group -->
+      </div>
+    </div><!-- br-header -->
+    
+    <div class="br-mainpanel">
+      <div class="br-pageheader pd-y-15 pd-l-20">
+        <nav class="breadcrumb pd-0 mg-0 tx-12">
+          <h6>Evaluando a: <label id="pPsw"></label>
+        </nav>
+      </div><!-- br-pageheader -->
+    
+        <div class="br-section-wrapper">
+          <div id="wizard7" class="mg-t-80">
+            <h3>Pregunta 1</h3>
+            <section id="preg1">
+              <h6>¿<label class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10" id="lblPregunta1" name="lblPregunta1"></label>?</h6>
+              <p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div data-toggle="buttons">
+                        <label class="btn btn-success btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta1" id="chkPregunta1"  value="Excelente" type="radio">Excelente
+                         </label>
+                        <label class="btn btn-info btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta1" id="chkPregunta1" value="Bueno" type="radio">Bueno
+                         </label>
+                         <div class="separator"></div>
+                        <label class="btn btn-primary btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta1" id="chkPregunta1" value="Malo" type="radio">Malo
+                          </label>
+                        <label class="btn btn-warning btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta1" id="chkPregunta1" value="Deficiente" type="radio">Deficiente
+                          </label>
+                        </div>
+                  </div>
+                </div>
+               
+                </p>
+            </section>
+            <h3>Pregunta 2</h3>
+            <section id="preg2">
+              <h4>¿<label class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10" id="lblPregunta2" name="lblPregunta2"></label>?</h4>
+              <p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div data-toggle="buttons">
+                        <label class="btn btn-success btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta2" id="chkPregunta2"  value="Excelente" type="radio">Excelente
+                         </label>
+                        <label class="btn btn-info btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta2" id="chkPregunta2" value="Bueno" type="radio">Bueno
+                         </label>
+                         <div class="separator"></div>
+                        <label class="btn btn-primary btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta2" id="chkPregunta2" value="Malo" type="radio">Malo
+                          </label>
+                        
+                        <label class="btn btn-warning btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta2" id="chkPregunta2" value="Deficiente" type="radio">Deficiente
+                          </label>
+                        </div>
+                  </div>
+                </div>
+              </p>
+            </section>
+            <h3>Pregunta 3</h3>
+            <section id="preg3">
+              <h4>¿<label class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10" id="lblPregunta3" name="lblPregunta3"></label>?</h4>
+              <p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div data-toggle="buttons">
+                        <label class="btn btn-success btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta3" id="chkPregunta3"  value="Excelente" type="radio">Excelente
+                         </label>
+                        <label class="btn btn-info btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta3" id="chkPregunta3" value="Bueno" type="radio">Bueno
+                         </label>
+                         <div class="separator"></div>
+                        <label class="btn btn-primary btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta3" id="chkPregunta3" value="Malo" type="radio">Malo
+                          </label>
+                        
+                        <label class="btn btn-warning btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta3" id="chkPregunta3" value="Deficiente" type="radio">Deficiente
+                          </label>
+                        </div>
+                  </div>
+                </div>
+              </p>
+            </section>
+            <h3>Pregunta 4</h3>
+            <section id="preg4">
+              <h4>¿<label class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10" id="lblPregunta4" name="lblPregunta4"></label>?</h4>
+              <p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div data-toggle="buttons">
+                        <label class="btn btn-success btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta4" id="chkPregunta4"  value="Excelente" type="radio">Excelente
+                         </label>
+                        <label class="btn btn-info btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta4" id="chkPregunta4" value="Bueno" type="radio">Bueno
+                         </label>
+                         <div class="separator"></div>
+                        <label class="btn btn-primary btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta4" id="chkPregunta4" value="Malo" type="radio">Malo
+                          </label>
+                        
+                        <label class="btn btn-warning btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta4" id="chkPregunta4" value="Deficiente" type="radio">Deficiente
+                          </label>
+                        </div>
+                  </div>
+                </div>
+              </p>
+            </section>
+            <h3>Pregunta 5</h3>
+            <section id="preg5">
+              <h4>¿<label class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10" id="lblPregunta5" name="lblPregunta5"></label>?</h4>
+              <p>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div data-toggle="buttons">
+                        <label class="btn btn-success btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta5" id="chkPregunta5"  value="Excelente" type="radio">Excelente
+                         </label>
+                        <label class="btn btn-info btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                            <input name="chkPregunta5" id="chkPregunta5" value="Bueno" type="radio">Bueno
+                         </label>
+                         <div class="separator"></div>
+                        <label class="btn btn-primary btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta5" id="chkPregunta5" value="Malo" type="radio">Malo
+                          </label>
+                        
+                        <label class="btn btn-warning btn-sm raised waves-effect ht-80 wd-100 justify-content-between">
+                           <input name="chkPregunta5" id="chkPregunta5" value="Deficiente" type="radio">Deficiente
+                          </label>
+                        </div>
+                  </div>
+                </div>
+              </p>
+            </section>
+          </div>
+        </div><!-- br-section-wrapper -->
+      <!--</div> br-pagebody -->
+      <footer class="br-footer">
+        <div class="footer-left">
+          <div class="mg-b-2">Desarrollado por. Tecnocreativo.cl </div>
+        </div>
+        </footer>
+    </div><!-- br-mainpanel -->
+    <!-- ########## END: MAIN PANEL ########## -->
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="lib/popper.js/popper.js"></script>
+    <script src="lib/bootstrap/bootstrap.js"></script>
+    <script src="lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="lib/moment/moment.js"></script>
+    <script src="lib/jquery-ui/jquery-ui.js"></script>
+    <script src="lib/jquery-switchbutton/jquery.switchButton.js"></script>
+    <script src="lib/peity/jquery.peity.js"></script>
+    <script src="lib/highlightjs/highlight.pack.js"></script>
+    <script src="lib/jquery.steps/jquery.steps.js"></script>
+    <script src="lib/parsleyjs/parsley.js"></script>
+    <script type="text/javascript" src="js/appController.js"></script>
+
+    <script src="js/bracket.js"></script>
+    <script>
+      $(document).ready(function(){
+        'use strict';
+        $('#wizard7').steps({
+          headerTag: 'h3',
+          bodyTag: 'section',
+          autoFocus: true,
+          titleTemplate: '<span class="number">#index#</span> <span class="title">#title#</span>',
+          //cssClass: 'wizard wizard-style-3'
+          onStepChanging: function (event, currentIndex, newIndex) {
+            if(currentIndex < newIndex) {
+              var preg1 = $("[name='chkPregunta1']:checked").val();
+              
+              
+              // Step 1 form validation
+              if(preg1 !=undefined){
+                alert('seleccionado:' + $("[name='chkPregunta1']:checked").val());
+                return true;
+              }else{
+                alert('sin seleccinar');
+                return false;
+              }
+              var preg2 = $("[name='chkPregunta1']:checked").val();
+              // Step 2 form validation
+              if(currentIndex === 1) {
+                //var email = $('#email').parsley();
+                if(preg2 != undefined){
+                  return true;
+                } else { return false; }
+              }
+            // Always allow step back to the previous step even if the current step is not valid.
+            } else 
+            { return true; }
+
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
